@@ -49,14 +49,14 @@ public class Main { //A litre of paint generally covers 10m². 1 l = 1.8£
         System.out.println("Total amount of paint: "+ totalPaint + " Litres");
         System.out.println("Total amount of cost: £"+ totalCost);
     }
-    public static double Area(){ //takes in length and width and calculates area
+    public static double Area(){ //takes in length & width and returns area
         System.out.print("Please Input Length (mm): ");
         double length= Input()/1000;
         System.out.print("Please Input Width (mm): ");
         double width= Input()/1000;
         return length*width;
     }
-    public static double Input(){
+    public static double Input(){ //Takes and input from the user and stores the value as a double
         Scanner sc1 = new Scanner(System.in);
         return Double.parseDouble(sc1.nextLine());
     }
